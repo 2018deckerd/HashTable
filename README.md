@@ -1,2 +1,2 @@
-# HashTable
-A data structure that blends the benefits of linked lists and arrays together.
+# hash-table-starter
+repo with starter code for hash table program
