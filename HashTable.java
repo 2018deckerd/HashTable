@@ -97,7 +97,7 @@ public class HashTable {
 			pointerPrevious = map[index];
 			pointer = pointerPrevious.next;
 			while (pointer != null && pointerPrevious != null) {
-				if (map[index].record.equals(key)) {
+				if (pointerPrevious.record.equals(key)) {
 					map[index] = map[index].next;
 					pointerPrevious = map[index];
 					pointer = pointerPrevious.next;
@@ -105,6 +105,7 @@ public class HashTable {
 				if (pointer.record.equals(key)) {
 					pointerPrevious.next = pointer.next;
 				}
+			
 				pointerPrevious = pointerPrevious.next;
 				pointer = pointer.next;
 			}
